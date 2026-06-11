@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Nostrum</title>
+  </head>
+  <body class="bg-p3 dark:bg-neutral-900">
+    <div class="bg-p1 text-center">
+      <p class="text-xs text-neutral-50 py-1">
+        Olá amor, fiz esse site para você! 👋 | Espero que goste!
+      </p>
+    </div>
+    <main
+      class="container my-8 bg-neutral-800 p-4 rounded-2xl flex flex-col gap-4 animate-slide-in">
+      <div class="text-balance *:mb-2">
+        <h1
+          class="text-2xl font-display dark:text-pink-100 text-pink-950 animate-fade-in animate-delay-100 opacity-0">
+          Entre nós sempre haverá música, então aproveite essa playlist!
+        </h1>
+        <p
+          class="text-base font-texto text-neutral-600 dark:text-neutral-200 animate-fade-in animate-delay-200 opacity-0">
+          Essas músicas me fazem lembrar você!
+        </p>
+      </div>
+      <div class="animate-slide-in opacity-0 animate-delay-400">
+        <iframe
+          data-testid="embed-iframe"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/2i3tQlMJJCSdKSGt0VZu4o?utm_source=generator"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+          "
+          loading="lazy"></iframe>
+      </div>
+    </main>
+    <section
+      class="container bg-neutral-800 p-4 rounded-4xl flex items-center justify-between text-balance opacity-0 animate-slide-in animate-delay-800">
+      <h1 class="text-2xl text-neutral-800 dark:text-pink-100">
+        Nossa primeira mensagem foi a:
+      </h1>
+      <p
+        id="countup"
+        class="text-base md:text-2xl font-bold text-pink-800 dark:text-gray-100"></p>
+    </section>
+    <section>
+      <div
+        class="container my-4 text-balance opacity-0 animate-fade-in animate-delay-1000">
+        <h1 class="text-p2 font-display">
+          Estou trabalhando em mais coisas para cá... Só questão de tempo ⏳
+        </h1>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
